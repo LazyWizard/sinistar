@@ -1,0 +1,25 @@
+{
+	"id":"sinistar",
+	"specClass":"projectile",
+	"type":"DECORATIVE",
+	"size":"LARGE",
+	"turretSprite":"graphics/sinistar/weapons/decorative/sinistar_00.png",
+	"hardpointSprite":"graphics/sinistar/weapons/decorative/sinistar_00.png",
+	"everyFrameEffect":"data.scripts.weapons.SinistarAnimation",
+        "numFrames":11,
+	"frameRate":0,
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"NONE",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":35.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":14.0,
+					   "particleDuration":0.15,
+					   "particleCount":11,
+					   "particleColor":[255,240,165,200]},
+	"projectileSpecId":"chaingun_shot",  # projectile that will be fired
+}

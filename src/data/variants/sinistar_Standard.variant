@@ -1,0 +1,17 @@
+{
+  "displayName": "",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "sinistar",
+  "hullMods": [],
+  "variantId": "sinistar_Standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "SINISTAR": "sinistar"
+      }
+    }
+  ]
+}

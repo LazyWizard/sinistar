@@ -1,0 +1,2 @@
+name,id,tier,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,hints,number
+Sinistar,sinistar,,,0,,0,,,,,0,,,,,9999,9999,,,,,,,,0,0,,,SYSTEM,666
