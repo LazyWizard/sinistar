@@ -1,0 +1,2 @@
+name,id,designation,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,hangar,base value,hints,number
+Sinistar,sinistar,,,50,20000,5000,5000,,500,0,50,25,25,25,25,5000,NONE,,,,1,,,1,1,500,500,25,45,0,50000,,666
