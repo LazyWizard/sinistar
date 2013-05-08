@@ -97,9 +97,6 @@
     95.5,
     6.5
   ],
-  "builtInWeapons": {
-    "SINISTAR": "sinistar"
-  },
   "center": [
     117,
     108
@@ -130,6 +127,38 @@
       "mount": "TURRET",
       "size": "LARGE",
       "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        7,
+        43.5,
+        22.5,
+        35,
+        3,
+        15
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        22,
+        -34,
+        3.5,
+        -13.5,
+        7,
+        -43.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
     }
   ],
   "width": 234
