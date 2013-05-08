@@ -2,11 +2,13 @@ package data.missions.sinistar;
 
 import com.fs.starfarer.api.campaign.CargoAPI.CrewXPLevel;
 import com.fs.starfarer.api.fleet.FleetGoal;
+import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.fleet.FleetMemberType;
 import com.fs.starfarer.api.mission.FleetSide;
 import com.fs.starfarer.api.mission.MissionDefinitionAPI;
 import com.fs.starfarer.api.mission.MissionDefinitionPlugin;
 
+// This is all temporary, will rewrite once the mod is further along
 public class MissionDefinition implements MissionDefinitionPlugin
 {
     @Override
@@ -15,8 +17,8 @@ public class MissionDefinition implements MissionDefinitionPlugin
         // Set up the fleets so we can add ships and fighter wings to them.
         // In this scenario, the fleets are attacking each other, but
         // in other scenarios, a fleet may be defending or trying to escape
-        api.initFleet(FleetSide.PLAYER, "PLAYER", FleetGoal.ATTACK, false, 10);
-        api.initFleet(FleetSide.ENEMY, "SINISTAR", FleetGoal.ATTACK, true, 10);
+        api.initFleet(FleetSide.PLAYER, "", FleetGoal.ATTACK, false, 10);
+        api.initFleet(FleetSide.ENEMY, "", FleetGoal.ATTACK, true, 10);
 
         // Set a small blurb for each fleet that shows up on the mission detail and
         // mission results screens to identify each side.
@@ -25,7 +27,7 @@ public class MissionDefinition implements MissionDefinitionPlugin
 
         // These show up as items in the bulleted list under
         // "Tactical Objectives" on the mission detail screen
-        api.addBriefingItem("Defeat Sinistar!");
+        api.addBriefingItem("Defeat Sinistar and his forces!");
 
         // Set up the player's fleet.  Variant names come from the
         // files in data/variants and data/variants/fighters
@@ -45,8 +47,10 @@ public class MissionDefinition implements MissionDefinitionPlugin
         api.addToFleet(FleetSide.PLAYER, "wasp_wing", FleetMemberType.FIGHTER_WING, false);
 
         // Set up the enemy fleet and add the Sinistar controller
-        api.addPlugin(new SinistarController(api.addToFleet(FleetSide.ENEMY,
-                "sinistar_Standard", FleetMemberType.SHIP, "", true, CrewXPLevel.ELITE)));
+        FleetMemberAPI sinistar = api.addToFleet(FleetSide.ENEMY, "sinistar_Standard",
+                FleetMemberType.SHIP, "", true, CrewXPLevel.ELITE);
+        sinistar.getCaptain().setPersonality("fearless");
+        api.addPlugin(new SinistarController(sinistar));
 
         // Set up the map.
         float width = 5000f;

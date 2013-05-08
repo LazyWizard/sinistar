@@ -1,6 +1,6 @@
 {
-    "sinistar_spawn": [{"file": "sounds/sinistar/I_am_Sinistar.ogg", "pitch": 1.0, "volume": 1.0}],
-    "sinistar_taunt0": [{"file": "sounds/sinistar/beware_I_live.ogg", "pitch": 1.0, "volume": 1.0}],
+    "sinistar_spawn": [{"file": "sounds/sinistar/beware_I_live.ogg", "pitch": 1.0, "volume": 1.0}],
+    "sinistar_taunt0": [{"file": "sounds/sinistar/I_am_Sinistar.ogg", "pitch": 1.0, "volume": 1.0}],
     "sinistar_taunt1": [{"file": "sounds/sinistar/beware_coward.ogg", "pitch": 1.0, "volume": 1.0}],
     "sinistar_taunt2": [{"file": "sounds/sinistar/run_coward.ogg", "pitch": 1.0, "volume": 1.0}],
     "sinistar_taunt3": [{"file": "sounds/sinistar/run_run_run.ogg", "pitch": 1.0, "volume": 1.0}],
