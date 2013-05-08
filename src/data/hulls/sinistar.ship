@@ -112,7 +112,7 @@
     0
   ],
   "shieldRadius": 138,
-  "spriteName": "graphics/sinistar/weapons/decorative/sinistar_01.png",
+  "spriteName": "graphics/sinistar/ships/sinistar.png",
   "style": "LOW_TECH",
   "viewOffset": 0,
   "weaponSlots": [
